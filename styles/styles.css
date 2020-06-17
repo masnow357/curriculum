@@ -80,6 +80,25 @@ body > main > div{
 
 }
 
+.slideMedia > div > a{
+    margin: 7rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 40%;
+    height: 35%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    align-content: center;
+    font-size: 1.5em;
+    z-index: 100;
+    transition: all .2s;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.76);
+    position: relative;
+    overflow: hidden;
+}
+
 
 .slideContent > div > a{
     margin: 7rem;
@@ -107,11 +126,11 @@ body > main > div{
     background: rgba(0, 0, 0, 0.7);
 }
 
-.slideContent > div > a > span{
+.slideContent > div > a > span, .slideMedia > div > a > span{
     position: absolute;
 }
 
-.slideContent > div > a > span:nth-child(1){
+.slideContent > div > a > span:nth-child(1), .slideMedia > div > a > span:nth-child(1){
     width: 100%;
     height: 4px;
     top: 0;
@@ -119,7 +138,7 @@ body > main > div{
     background: linear-gradient(90deg, transparent, rgb(0, 0, 0));
 }
 
-.slideContent > div > a > span:nth-child(2){
+.slideContent > div > a > span:nth-child(2), .slideMedia > div > a > span:nth-child(2){
     width: 4px;
     height: 100%;
     right: 0;
@@ -127,7 +146,7 @@ body > main > div{
     background: linear-gradient(180deg, transparent, rgb(0, 0, 0));
 }
 
-.slideContent > div > a > span:nth-child(3){
+.slideContent > div > a > span:nth-child(3), .slideMedia > div > a > span:nth-child(3){
     width: 100%;
     height: 4px;
     bottom: 0;
@@ -135,7 +154,7 @@ body > main > div{
     background: linear-gradient(270deg, transparent, rgb(0, 0, 0));
 }
 
-.slideContent > div > a > span:nth-child(4){
+.slideContent > div > a > span:nth-child(4), .slideMedia > div > a > span:nth-child(4){
     width: 4px;
     height: 100%;
     left: 0;
@@ -170,6 +189,32 @@ body > main > div{
     bottom: 100%;
 }
 
+
+
+
+
+.slideClick > div > a > span:nth-child(1){
+    transition: all 1s;
+    left: 100%;
+}
+
+.slideClick > div > a > span:nth-child(2){
+    transition: all 1s;
+    transition-delay: .25s;
+    top: 100%;
+}
+
+.slideClick > div > a > span:nth-child(3){
+    transition: all 1s;
+    transition-delay: .5s;
+    right: 100%;
+}
+
+.slideClick > div > a > span:nth-child(4){
+    transition: all 1s;
+    transition-delay: .75s;
+    bottom: 100%;
+}
 
 
 
@@ -211,4 +256,32 @@ body > main > div{
 /* end buttons */
 
 
+/* Responsive */
 
+
+
+@media screen and (max-width: 600px){
+    .buttons > img{
+        visibility: hidden;
+    }
+
+    .image > div > div{
+        align-content: center;
+    }
+
+    .slideMedia > div > a{
+        margin: 0;
+        width: 100%;
+        height: 300%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 200px){
+    .slideMedia > div > a{
+        font-size: 1em;
+    }
+}
