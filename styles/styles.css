@@ -17,6 +17,7 @@ body > main > div{
 
 .image > div{
     position: absolute;
+    transition: all .7s;
 }
 
 
@@ -120,6 +121,13 @@ body > main > div{
 }
 
 .slideContent > div > a:hover{
+    transition-delay: 1s;
+    box-shadow: 0px 0px 10px white, 0px 0px 40px white, 0px 0px 80px white;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.slideClick > div > a:hover{
     transition-delay: 1s;
     box-shadow: 0px 0px 10px white, 0px 0px 40px white, 0px 0px 80px white;
     color: white;
@@ -278,6 +286,10 @@ body > main > div{
 
 
 
+}
+
+.transition{
+    opacity: 0;
 }
 
 @media screen and (max-width: 200px){
