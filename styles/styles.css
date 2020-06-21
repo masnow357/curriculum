@@ -283,7 +283,17 @@ body > main > div{
         height: 300%;
     }
 
+    .image > div > div > div > h5{
+        font-size: 2em;
+    }
+    
+    .image > div > div > div > p{
+        font-size: 1em;    
+    }
 
+    .image > div > div > div{
+        border-radius: 20px;
+    }
 
 
 }
@@ -295,5 +305,13 @@ body > main > div{
 @media screen and (max-width: 200px){
     .slideMedia > div > a{
         font-size: 1em;
+    }
+
+    .image > div > div > div > h5{
+        font-size: 1em;
+    }
+    
+    .image > div > div > div > p{
+        font-size: .5em;    
     }
 }
